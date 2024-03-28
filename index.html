@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Calculator</h1>
+        <div class="container">
+            <div class="display" id="display"></div>
+            <div class="buttons">
+                <div class="row">
+                    <button onclick="clearD()" class="first">AC</button>
+                    <button onclick="delValue()" class="first">Del</button>
+                    <button onclick="insertValue('%')" class="first">%</button>
+                    <button onclick="insertValue('/')" class="operator">&#247;</button>
+                </div>
+                <div class="row">
+                    <button onclick="insertValue('7')" class="num">7</button>
+                    <button onclick="insertValue('8')" class="num">8</button>
+                    <button onclick="insertValue('9')" class="num">9</button>
+                    <button onclick="insertValue('*')" class="operator">&#215;</button>
+                </div>
+                <div class="row">
+                    <button onclick="insertValue('4')" class="num">4</button>
+                    <button onclick="insertValue('5')" class="num">5</button>
+                    <button onclick="insertValue('6')" class="num">6</button>
+                    <button onclick="insertValue('-')" class="operator">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="insertValue('1')"  class="num">1</button>
+                    <button onclick="insertValue('2')" class="num">2</button>
+                    <button onclick="insertValue('3')" class="num">3</button>
+                    <button onclick="insertValue('+')" class="operator">+</button>
+                </div>
+                <div class="row">
+                    <button onclick="insertValue('0')" class="num">0</button>
+                    <button onclick="insertValue('00')" class="num">00</button>
+                    <button onclick="insertValue('.')" class="num">.</button>
+                    <button onclick="solution()" class="operator">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
